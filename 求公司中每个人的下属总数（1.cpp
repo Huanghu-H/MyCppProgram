@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int n;
+int a[1005]; 
+
+int main()
+{
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		int x;
+		cin>>x;
+		if(x>=0)
+		{
+			a[x]=a[x]+1+a[i];
+		}
+	}
+	for(int i=0;i<n;i++)cout<<a[i]<<" ";
+	return 0;
+}
+
